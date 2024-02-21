@@ -275,6 +275,8 @@ section {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
 }
 
 .about-details-container {
@@ -298,6 +300,7 @@ section {
 
 .details-container {
     padding: 1.5rem;
+    max-width: 30%;
     flex: 1;
     background: white;
     border-radius: 2rem;
