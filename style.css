@@ -269,13 +269,14 @@ section {
 
 #about {
     position: relative;
+    margin-top: 5rem;
 }
 
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-evenly;
 }
 
@@ -300,7 +301,7 @@ section {
 
 .details-container {
     padding: 1.5rem;
-    max-width: 30%;
+    /* max-width: 30%; */
     flex: 1;
     background: white;
     border-radius: 2rem;
