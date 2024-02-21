@@ -277,7 +277,7 @@ section {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -303,7 +303,9 @@ section {
 .details-container {
     padding: 1.5rem;
     /* max-width: 30%; */
-    flex: 1;
+    /* flex: 1; */
+    flex: 1 0 calc(30% - 1.5rem);
+    margin-bottom: 2rem;
     background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
