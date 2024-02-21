@@ -269,7 +269,8 @@ section {
 
 #about {
     position: relative;
-    margin-top: 5rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 .about-containers {
@@ -326,6 +327,8 @@ section {
 
 #experience {
     position: relative;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 .experience-sub-title {
@@ -370,6 +373,8 @@ article .icon {
 
 #projects {
     position: relative;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 .color-container {
@@ -401,6 +406,8 @@ article .icon {
     justify-content: center;
     flex-direction: column;
     min-height: 70vh;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 .contact-info-upper-container {
@@ -440,6 +447,7 @@ article .icon {
 footer {
     min-height: 26vh;
     margin: 0 1rem;
+    margin-top: 6rem;
 }
 
 footer p {
