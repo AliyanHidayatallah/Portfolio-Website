@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Aliyan Hidayatallah</div>
+        <div>
+            <ul class="nav-links">
+                <li> <a href="#about">About</a> </li>
+                <li> <a href="#experience">Experience</a> </li>
+                <li> <a href="#projects">Projects</a> </li>
+                <li> <a href="#contact">Contact</a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Aliyan Hidayatallah</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li> <a href="#about" onclick="toggleMenu()">About</a> </li>
+                <li> <a href="#experience" onclick="toggleMenu()">Experience</a> </li>
+                <li> <a href="#projects" onclick="toggleMenu()">Projects</a> </li>
+                <li> <a href="#contact" onclick="toggleMenu()">Contact</a> </li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./ASSETS/profile-pic.PNG" alt="Aliyan Hidayatallah Profile Picture">
+        </div>
+        <div class="section__text">
+            
+            <h1 class="title">Aliyan Hidayatallah</h1>
+            <p class="section__text__p2">Computer Science Major</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./ASSETS/resume-example.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="scrollToContact()">Contact Info</button>
+
+            </div>
+            <div id="socials-container">
+                <img src="./ASSETS/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="window.open('https://www.linkedin.com/in/aliyan-hidayatallah-9023562b5/')"/> 
+                <img src="./ASSETS/github.png" alt="My Github Profile" class="icon" onclick="window.open('https://github.com/AliyanHidayatallah')"/> 
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./ASSETS/about-pic.png" alt="Profile Picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./ASSETS/experience.png" alt="Experience Icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>1 Year<br />JP Morgan Cybersecurity</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./ASSETS/education.png" alt="Education Icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>Sophomore<br />Wentworth Institute of Technology</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p> 
+                        I'm a 20-year-old computer science student currently pursuing my studies at 
+                        Wentworth Institute of Technology in Boston, Massachusetts. Renowned for my 
+                        never-ending thirst for knowledge, I thrive on challenges and like to immerse 
+                        myself in the ever-evolving world of technology. My interests span across cloud computing 
+                        and cybersecurity with a keen desire to specialize 
+                        in one of these domains as my ultimate career goal. I am passionate about utilizing 
+                        my knowledge to contribute to and integrate it into the tech market, fostering a 
+                        global perspective and driving innovation on a broader scale. I am on a continuous 
+                        journey to seize opportunities that will not only enhance my skills but also propel 
+                        me towards success in the ever-dynamic tech industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./ASSETS/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+
+    <section id="experience">
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+
+                <div class="details-container">
+
+                    <h2 class="experience-sub-title">Certifications</h2>
+                    <div class="article-container">
+
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Networks and Network Security</h3>
+                                <p>Google</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Manage Security Risks</h3>
+                                <p>Google</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Cybersecurity Foundations</h3>
+                                <p>Google</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Coursera</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Cloud Computing</h3>
+                                <p>The Cloud Bootcamp</p>
+                            </div>
+                        </article>
+
+                    </div>  
+                    
+                </div>
+
+                <div class="details-container">     
+                    
+                    <h2 class="experience-sub-title">Cybersecurity</h2>
+                    <div class="article-container">
+                        
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>CIA Triad</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Risk Management</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Incident Response</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Access Control</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Encryption</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Firewalls and IDS/IPS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>PCI DSS, GDPR, SOC 2</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Threat Modeling</h3>
+                            </div>
+                        </article>
+
+                    </div>
+                    
+                </div>
+
+                <div class="details-container">
+                    
+                    <h2 class="experience-sub-title">Cloud Computing</h2>
+                    <div class="article-container">
+
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>AWS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>GCP</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Kubernetes</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Terraform</h3>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <img src="./ASSETS/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./ASSETS/Security-Audit.png" alt="Project 1" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Internal Security Audit</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/AliyanHidayatallah/Botium-Toys-Security-Audit')">GitHub</button>
+                    </div>
+                </div> 
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./ASSETS/BEC-Project.png" alt="Project 2" class="project-img"/>
+                    </div> 
+                    <h2 class="experience-sub-title project-title">BEC AI Detection Model</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/AliyanHidayatallah/Business-Email-Compromise-BEC-Detection-Model')">GitHub</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./ASSETS/Mobile_Project.png" alt="Project 3" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Mobile Transaction Fraud Detection</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/AliyanHidayatallah/Mobile-Money-Transaction-Analysis---Fraud-Detection')">GitHub</button>
+                    </div>
+                </div>
+
+                <!-- <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./ASSETS/project-2.png" alt="Project 4" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Email Administration Application</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/AliyanHidayatallah/Email-Administration-App/tree/main')">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://youtu.be/KUB9q65xvjA')">Live Demo</button>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+        <img src="./ASSETS/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./ASSETS/email.png" alt="Email Icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:hidayatallaha.27@gmail.com">hidayatallaha.27@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./ASSETS/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/aliyan-hidayatallah-9023562b5/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Aliyan Hidayatallah. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"> </script>
+</body>
+</html>
